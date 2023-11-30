@@ -1,4 +1,4 @@
-package Array;
+package LeetCode75.Array;
 /*
 Problem: 1768. Merge Strings Alternately
 Link: https://leetcode.com/problems/merge-strings-alternately/
@@ -39,7 +39,7 @@ public class MergeStringsAlternately {
 
         // Test case
         String result = merger.mergeAlternately("abc", "123");
-        System.out.println("Merged String: " + result);
+        System.out.println("Merged LeetCode75.String: " + result);
     }
 }
 
@@ -48,18 +48,18 @@ public class MergeStringsAlternately {
 Notes:
 
 Inefficient string concatenation using " + "
-String inefficientConcatenation(String[] words) {
-    String result = "";
-    for (String word : words) {
+LeetCode75.String inefficientConcatenation(LeetCode75.String[] words) {
+    LeetCode75.String result = "";
+    for (LeetCode75.String word : words) {
         result += word;
     }
     return result;
 }
 
 Efficient string concatenation using StringBuilder
-String efficientConcatenation(String[] words) {
+LeetCode75.String efficientConcatenation(LeetCode75.String[] words) {
     StringBuilder sb = new StringBuilder();
-    for (String word : words) {
+    for (LeetCode75.String word : words) {
         sb.append(word);
     }
     return sb.toString();
